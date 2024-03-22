@@ -27,92 +27,81 @@
 
     <title>Femkit Clothing Brand</title>
     <style>
-                                                                        :root {
-                                                                       --primary-color: #baa394;
-                                                                      --secondary-color: #2d2a27;
-                                                                       --primary-font:font-family: "Montserrat", sans-serif;
-                                                                         }
+                      :root {
+                      --primary-color: #baa394;
+                      --secondary-color: #2d2a27;
+                      --primary-font:font-family: "Montserrat", sans-serif;
+                       }
 
+                      body {
+                      font-family: "Montserrat", sans-serif;
+                      color: var(--primary-color);
+                      background-color: var(--primary-color);
+                       }
+                      header {
+                      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                      url("images/header-pic.png");
+                      background-size: cover;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      text-align: center;
+                      padding: 190px 0;
+                       }
 
-                                                                     body {
+                      h1 {
+                      text-align: center;
+                      text-transform: uppercase;
+                      letter-spacing: 80px;
+                      font-weight: 800;
+                       }
+                      h2 {
+                     letter-spacing: 5px;
+                     margin-top: 20px;
+                                                                                                                    }
 
-                                                                        font-family: "Montserrat", sans-serif;
-                                                                        color: var(--primary-color);
-                                                                     background-color: var(--primary-color);
-                                                                    }
-                                                                    header {
-                                                                   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                                                                    url("images/header-pic.png");
-                                                                   background-size: cover;
-                                                                   background-position: center;
-                                                                   background-repeat: no-repeat;
-                                                                    text-align: center;
-                                                                    padding: 190px 0;
-                                                                    }
+                     @keyframes downarrow {
+                    0% { -webkit-transform: translateY(0); opacity: 0.4 }
+                    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
+                     }
 
-                                                                h1 {
-                                                                   text-align: center;
-                                                                   text-transform: uppercase;
-                                                                   letter-spacing: 80px;
-                                                                   font-weight: 800;
-                                                                    }
-                                                                h2 {
-                                                                   letter-spacing: 5px;
-                                                                    margin-top: 20px;
-                                                                                                  }
+                   .arrow {
+                  border-color:transparent;
+                  border-style:solid;
+                  border-width:0 2em;
+                  display:block;
+                  height:0;
+                  margin:7em auto;
+                  opacity:0.4;
+                  text-indent:-9999px;
+                  transform-origin: 50% 50%;
+                  width:0;
+                    }
+             .down {
+              animation:
+             downarrow 0.6s infinite alternate ease-in-out;
+             border-top:2em solid var(--primary-color);
+                }
 
-                                                       @keyframes downarrow {
-                                                       0% { -webkit-transform: translateY(0); opacity: 0.4 }
-                                                    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
-                                                     }
+             .shop-link {
+             letter-spacing: 5px;
+              color: var(--primary-color);
+               }
 
-                                                   .arrow {
-                                                   border-color:transparent;
-                                                   border-style:solid;
-                                                   border-width:0 2em;
-                                                   display:block;
-                                                   height:0;
-                                                  margin:7em auto;
-                                                  opacity:0.4;
-                                                  text-indent:-9999px;
-                                                  transform-origin: 50% 50%;
-                                               width:0;
-                                                }
-                                                .down {
-                                                animation:
-                                                 downarrow 0.6s infinite alternate ease-in-out;
-                                                 border-top:2em solid var(--primary-color);
-                                                          }
-
-
-                                                       .shop-link {
-                                                     letter-spacing: 5px;
-                                                     color: var(--primary-color);
-                                          }
-
-                            .grid {
-                              margin-top: 1px;
-                            }
-
-
-                              .grid img {
-
-                                max-width: 410px;
-
-                              }
-
-                        .grid .pic-3 {
-
-                          max-width: 435px;
-
-                        }
-                        .mid {
-                          margin-top: -11px;
-                        }
-
-                  .mid img {
-                  max-width: 1264px;
-                  }
+             .grid {
+             margin-top: 1px;
+              }
+            .grid img {
+             max-width: 410px;
+            }
+            .grid .pic-3 {
+             max-width: 435px;
+             }
+             .mid {
+            margin-top: -11px;
+              }
+            .mid img {
+              max-width: 1264px;
+             }
             .mid-link {
             display: flex;
             position: relative;
@@ -122,33 +111,35 @@
             font-size: 20px;
             letter-spacing: 5px;
             }
-
-      .grid-2{
-             display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 5px;
-        margin-top: -27px;
-      }
+            .grid-2{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+            margin-top: -27px;
+            }
             .paragraph {
-              background-color: #fff;
+            background-color: #fff;
+            color: var(--secondary-color)
             }
             .grid-2 img {
-              max-width: 550px;
+            max-width: 550px;
             }
+      .fabric-pic {
+       width: 300px;
+       filter: grayscale(100%);
+      }
 
-                                          @media(max-width:550px) {
-                                            header {
-                                              padding: 80px 0;
-
-                                            }
-                                            header h1 {
-                                    letter-spacing: 38px;
-                                            }
-                                            header h2 {
-
-                                              font-size: 14px;
-                                            }
-                                          }
+            @media(max-width:550px) {
+            header {
+            padding: 80px 0;
+             }
+            header h1 {
+            letter-spacing: 38px;
+            }
+            header h2 {
+            font-size: 14px;
+            }
+            }
     </style>
   </head>
   <body>
@@ -199,13 +190,21 @@
       </section>
       <section class="grid-2">
         <div class="paragraph">
-          <p>
-            The story of Femkit began with the search for a simple, classic
-            dress that flatters the figure and is affordable at the same
-            time.The designs breathe the air of yesterday and touch the present.
-            Femkit creates timeless favorites that make every woman's heart beat
-            faster.
-          </p>
+          <span>
+            <p>
+              The story of Femkit began with the search for a simple, classic
+              dress that flatters the figure and is affordable at the same
+              time.The designs breathe the air of yesterday and touch the
+              present. Femkit creates timeless favorites that make every woman's
+              heart beat faster.
+            </p>
+
+            <img
+              src="images/grid-2-pic-2.png"
+              class="fabric-pic"
+              alt="picture of fabrics"
+            />
+          </span>
           <p>
             Femkit is a Berlin-based slowfashion brand that deliberately avoids
             in-house fabric production and instead relies on German and European
