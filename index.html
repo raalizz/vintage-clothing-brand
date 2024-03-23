@@ -27,119 +27,151 @@
 
     <title>Femkit Clothing Brand</title>
     <style>
-                      :root {
-                      --primary-color: #baa394;
-                      --secondary-color: #2d2a27;
-                      --primary-font:font-family: "Montserrat", sans-serif;
-                       }
+                                                  :root {
+                                                  --primary-color: #baa394;
+                                                  --secondary-color: #2d2a27;
+                                                  --primary-font:font-family: "Montserrat", sans-serif;
+                                                   }
 
-                      body {
-                      font-family: "Montserrat", sans-serif;
-                      color: var(--primary-color);
-                      background-color: var(--primary-color);
-                       }
-                      header {
-                      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                      url("images/header-pic.png");
-                      background-size: cover;
-                      background-position: center;
-                      background-repeat: no-repeat;
-                      text-align: center;
-                      padding: 190px 0;
-                       }
+                                                  body {
+                                                  font-family: "Montserrat", sans-serif;
+                                                  color: var(--primary-color);
+                                                  background-color: var(--primary-color);
+                                                   }
+                                                  header {
+                                                  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                                                  url("images/header-pic.png");
+                                                  background-size: cover;
+                                                  background-position: center;
+                                                  background-repeat: no-repeat;
+                                                  text-align: center;
+                                                  padding: 190px 0;
+                                                   }
 
-                      h1 {
-                      text-align: center;
-                      text-transform: uppercase;
-                      letter-spacing: 80px;
-                      font-weight: 800;
-                       }
-                      h2 {
-                     letter-spacing: 5px;
-                     margin-top: 20px;
-                                                                                                                    }
+                                                  h1 {
+                                                  text-align: center;
+                                                  text-transform: uppercase;
+                                                  letter-spacing: 80px;
+                                                  font-weight: 800;
+                                                   }
+                                                  h2 {
+                                                 letter-spacing: 5px;
+                                                 margin-top: 20px;
+                                                                                                                                                }
 
-                     @keyframes downarrow {
-                    0% { -webkit-transform: translateY(0); opacity: 0.4 }
-                    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
+                                                 @keyframes downarrow {
+                                                0% { -webkit-transform: translateY(0); opacity: 0.4 }
+                                                100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
+                                                 }
+
+                                               .arrow {
+                                              border-color:transparent;
+                                              border-style:solid;
+                                              border-width:0 2em;
+                                              display:block;
+                                              height:0;
+                                              margin:7em auto;
+                                              opacity:0.4;
+                                              text-indent:-9999px;
+                                              transform-origin: 50% 50%;
+                                              width:0;
+                                                }
+                                         .down {
+                                          animation:
+                                         downarrow 0.6s infinite alternate ease-in-out;
+                                         border-top:2em solid var(--primary-color);
+                                            }
+
+                                         .shop-link {
+                                         letter-spacing: 5px;
+                                          color: var(--primary-color);
+                                           }
+
+                                         .grid {
+                                         margin-top: 1px;
+                                          }
+                                        .grid img {
+                                         max-width: 410px;
+                                        }
+                                        .grid .pic-3 {
+                                         max-width: 435px;
+                                         }
+                                         .mid {
+                                        margin-top: -11px;
+                                          }
+                                        .mid img {
+                                          max-width: 1264px;
+                                         }
+                                        .mid-link {
+                                        display: flex;
+                                        position: relative;
+                                        top: -180px;
+                                        right: -150px;
+                                        color: var(--primary-color);
+                                        font-size: 20px;
+                                        letter-spacing: 5px;
+                                        }
+                                        .grid-2{
+                                        display: grid;
+                                        grid-template-columns: auto auto;
+                                        grid-gap: 5px;
+                                        margin-top: -27px;
+                                        }
+                                        .paragraph {
+                                        background-color: #fff;
+                                        color: var(--secondary-color)
+                                        }
+                                        .grid-2 img {
+                                        max-width: 550px;
+                                       }
+
+                                .grid-2 .shop-info-1 {
+                                  font-size: 13px;
+                                  color: #444742;
+                                  border-left: 2px solid var(--primary-color);
+                                  margin-left: 40px;
+                                  padding: 10px;
+                                }
+                                  .fabric-pic {
+                                   width: 300px;
+                                   filter: grayscale(100%);
+                                  }
+                                   .info-1 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 2fr;
+                                    grid-gap: 150px;
+                                    margin-top: 20px;
+                           }
+                     .info-2  {
+                       display: grid;
+                       grid-template-columns: 2fr 1fr;
+                       grid-gap: 150px;
+                       margin-top: 20px;
                      }
+              .grid-2 .shop-info-2 {
+              font-size: 13px;
+              color: #444742;
+              border-left: 2px solid var(--primary-color);
+              margin-right: 40px;
+             padding: 10px;
+          }
+          .grid-2 .factory-pic {
+             width: 330px;
+            filter: grayscale(100%);
+            margin-left: 40px;
+          }
 
-                   .arrow {
-                  border-color:transparent;
-                  border-style:solid;
-                  border-width:0 2em;
-                  display:block;
-                  height:0;
-                  margin:7em auto;
-                  opacity:0.4;
-                  text-indent:-9999px;
-                  transform-origin: 50% 50%;
-                  width:0;
-                    }
-             .down {
-              animation:
-             downarrow 0.6s infinite alternate ease-in-out;
-             border-top:2em solid var(--primary-color);
-                }
-
-             .shop-link {
-             letter-spacing: 5px;
-              color: var(--primary-color);
-               }
-
-             .grid {
-             margin-top: 1px;
-              }
-            .grid img {
-             max-width: 410px;
-            }
-            .grid .pic-3 {
-             max-width: 435px;
-             }
-             .mid {
-            margin-top: -11px;
-              }
-            .mid img {
-              max-width: 1264px;
-             }
-            .mid-link {
-            display: flex;
-            position: relative;
-            top: -180px;
-            right: -150px;
-            color: var(--primary-color);
-            font-size: 20px;
-            letter-spacing: 5px;
-            }
-            .grid-2{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-gap: 5px;
-            margin-top: -27px;
-            }
-            .paragraph {
-            background-color: #fff;
-            color: var(--secondary-color)
-            }
-            .grid-2 img {
-            max-width: 550px;
-            }
-      .fabric-pic {
-       width: 300px;
-       filter: grayscale(100%);
+       @media(max-width:550px) {
+      header {
+      padding: 80px 0;
       }
-
-            @media(max-width:550px) {
-            header {
-            padding: 80px 0;
-             }
-            header h1 {
-            letter-spacing: 38px;
-            }
-            header h2 {
-            font-size: 14px;
-            }
-            }
+      header h1 {
+      letter-spacing: 38px;
+      }
+      header h2 {
+      font-size: 14px;
+       }
+      }
     </style>
   </head>
   <body>
@@ -190,27 +222,32 @@
       </section>
       <section class="grid-2">
         <div class="paragraph">
-          <span>
-            <p>
+          <span class="info-1">
+            <p class="shop-info-1">
               The story of Femkit began with the search for a simple, classic
               dress that flatters the figure and is affordable at the same
               time.The designs breathe the air of yesterday and touch the
-              present. Femkit creates timeless favorites that make every woman's
-              heart beat faster.
+              present.
             </p>
-
             <img
               src="images/grid-2-pic-2.png"
               class="fabric-pic"
               alt="picture of fabrics"
             />
           </span>
-          <p>
-            Femkit is a Berlin-based slowfashion brand that deliberately avoids
-            in-house fabric production and instead relies on German and European
-            stock. A lean production model avoids overproduction and allows for
-            balanced pricing.
-          </p>
+          <span class="info-2">
+            <img
+              src="images/factory-pic.png"
+              alt="picture of the shop's factory"
+              class="factory-pic"
+            />
+            <p class="shop-info-2">
+              Femkit is a Berlin-based slowfashion brand that deliberately
+              avoids in-house fabric production and instead relies on German and
+              European stock. A lean production model avoids overproduction and
+              allows for balanced pricing.
+            </p>
+          </span>
         </div>
         <div>
           <img src="images/grid-2-pic.png" alt="women in vintage clothing" />
